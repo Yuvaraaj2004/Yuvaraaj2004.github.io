@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --first-color:steelblue;
+    --second-color:midnightblue;
+    --third-color:#0047AB;
+    --forth-color:#87CEEB;
+    --fifth-color:#E0FFFF;
+    --text-color:rgb(220, 220, 220);
+}
+*
+{
+    margin: 0;
+    font-weight: 400;
+}
+
+body
+{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.3rem;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #002D62;
+    color:var(--text-color)
+}
+a
+{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    margin: 0px 10px;
+}
+a:hover,a:focus{
+    background-color: aliceblue;
+    color:var(--first-color);
+}
+.NAV
+{
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 15px white;
+    width: 100vw;
+    height:7rem;
+}
+.intro
+{
+    background-color:var(--third-color);
+    width: 70vw;
+    text-align: left;
+    border-radius: 30px;
+    margin-bottom: 7rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro:hover
+{
+    border:4px #4d4d4d solid ;
+}
+.IntroPara
+{
+    width: 65%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+.CV-But
+{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    color: black;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+}
+.prof
+{
+    color:bisque;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.skills
+{
+    width: 60vw;
+    background-color: var(--third-color);
+    border-radius: 20px;
+    color: var(--text-color);
+}
+h1{
+    color: azure;
+}
+.skillset h2
+{
+    font-size:1.5rem;
+    font-weight: 500;
+}
+.skillset
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--fifth-color);
+    color:black;
+    margin: 10px 30px;
+    border-radius: 20px;
+}
+.progressBar
+{
+    background-color: var(--first-color);
+    border-radius: 20px;
+    width: 300px;
+    height: 1.5rem;
+}
+.filled
+{
+    border-radius: 20px;
+    background:wheat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img{
+     object-fit: cover;
+
+}
+.skilltitle
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: ease-in 4s;
+}
+.skilltitle:hover{
+    text-align: center;
+}
+.skillset p{
+    width: 50vw;
+    display: none;
+}
+.skilltitle:hover +.skillset p{
+    display: block;
+}
+.skilltitle:hover + p {
+    display: block;
+    margin-top: 10px; /* Adjust the top margin as needed */
+    text-align: center; /* Align the paragraph text to the center */
+}
+.skilltitle + p {
+    display: none;
+}
+.Educational
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third-color);
+    width: 50vw;
+    height: 20vh;
+    margin: 10px;
+    border-radius: 10px;
+}
+.Educational:hover
+{
+    border:3px solid #E0FFFF;
+}
+.educationSub
+{
+    display: flex;
+    display:flex;flex-direction: column
+}
+.Education h2
+{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.Education h3
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--fifth-color);
+}
+.projects
+{
+    background-color: var(--second-color);
+    border-radius: 20px;
+}
+.projelem
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    background-color: #0047AB;
+    padding: 20px;
+    margin: 15px;
+}
+.projelem h2{
+    color: black;
+    font-weight: 600;
+    
+}
+.projelem img
+{
+    width: 300px;
+    height: 300px;
+}
+.TechStack
+{
+    color: gray;
+}
+.contact
+{
+    width: 100vw;
+    background-color: #000000;
+
+}
+.segment
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #E0FFFF;
+}
+.elem{
+    padding: 10px;
+    background-color: black;
+    margin: 30px;
+    border-radius: 10px;
+}
